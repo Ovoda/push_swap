@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/21 14:28:32 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/04 19:00:43 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/20 15:56:29 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,13 @@ typedef struct	s_stack
 	int				value;
 }				t_stack;
 
+typedef struct	s_elem
+{
+	int		value;
+	t_stack	*next;
+	t_stack	*prev;
+}				t_elem;
+
 // SRCS
 int		get_next_line(int fd, char **line);
 int		ps_error();
@@ -36,6 +43,11 @@ t_stack	*sort_ref_stack(t_stack *stack);
 void	alg_simple_sa_ra(t_stack *stack);
 void	alg_pivot(t_stack *stack);
 void	alg_three_less(t_stack *stack, int print);
+void    solve_second_half(t_stack **stack, t_stack **b);
+int 	get_pivot(t_stack *stack);
+void    solve_first_half(t_stack **a, t_stack **b);
+int		try_all_elems(t_stack **stack, t_stack **b, int pivot);
+int		try_all_elems2(t_stack **stack, t_stack **b, int pivot);
 
 // PUSH_SWAP LIB
 void	pa(t_stack **a, t_stack **b, int print);
@@ -53,6 +65,9 @@ void	rrr(t_stack **a, t_stack **b, int print);
 // STACK LIB
 
 int		sl_check_sorted(t_stack *a);
+int		sl_get_index(t_stack *stack, int elem);
+int		sl_get_last(t_stack *stack);
+int		sl_get_elem_at_index(t_stack *stack, int index);
 t_stack	*sl_stackdup(t_stack *stack);
 void	sl_push_back(t_stack **stack, t_stack *elem);
 int		sl_check_error_stack(t_stack *stack);

@@ -1,7 +1,7 @@
 CHECKER		=	checker
 PUSH_SWAP	=	push_swap
 
-CC			=	clang #-g -Wall -Werror -Wextra
+CC			=	clang -g #-Wall -Werror -Wextra
 
 RM			=	rm -rf
 
@@ -36,14 +36,19 @@ SRCS_NAME	=	srcs/get_next_line.c					\
 				stack_lib/sl_free_stack.c				\
 				stack_lib/sl_tab_to_stack.c				\
 				stack_lib/sl_last_elem.c				\
+				stack_lib/sl_get_index.c				\
+				stack_lib/sl_get_last.c				\
 				stack_lib/sl_rotate_up.c				\
 				stack_lib/sl_rotate_down.c				\
 				stack_lib/sl_swap_first_two.c			\
 				stack_lib/sl_remove_first_elem.c		\
 				stack_lib/sl_check_error_stack.c		\
+				stack_lib/sl_get_elem_at_index.c		\
 				stack_lib/sl_push.c						\
 				algo_lib/alg_simple_sa_ra.c				\
 				algo_lib/alg_pivot.c					\
+				algo_lib/alg_pivot_try_elem.c			\
+				algo_lib/alg_pivot_try_elem2.c			\
 				algo_lib/alg_three_less.c				\
 
 PS_SRCS_NAME	= srcs/push_swap.c						\

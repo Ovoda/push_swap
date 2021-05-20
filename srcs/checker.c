@@ -6,13 +6,53 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/22 12:50:47 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/07 10:29:57 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/19 01:19:22 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
 typedef void psf(t_stack**, t_stack **, int);
+int		size = 0;
+
+void	visu(t_stack *stack, t_stack *b)
+{
+	t_stack	*tmp;
+	t_stack	*tmp_b;
+
+	tmp = sl_stackdup(stack);
+	tmp_b = sl_stackdup(b);
+	usleep(40000);
+	printf("\n\n\n\n\n\n\n");
+	printf("\n\n\n\n\n\n\n");
+	printf("\n\n\n\n\n\n\n");
+	printf("\n\n\n\n\n\n\n");
+	printf("\n\n\n\n\n\n\n");
+	printf("\n\n\n\n\n\n\n");
+	printf("\n\n\n\n\n\n\n");
+	while (tmp)
+	{
+		printf("%2d ", tmp->value);
+		for (int x = 0; x < size; x++)
+		{
+			if (tmp->value <= 0)
+				printf(" ");
+			else
+				printf(".");
+			tmp->value--;
+		}
+		printf("%-*s", size, "");
+		if (tmp_b)
+		{
+			printf("%2d ", tmp_b->value);
+			while (tmp_b->value--)
+				printf(".");
+			tmp_b = tmp_b->next;
+		}
+		printf("\n");
+		tmp = tmp->next;
+	}
+}
 
 int	analyse_buffer(char *line, t_stack **stack_a, t_stack **stack_b)
 {
@@ -29,6 +69,7 @@ int	analyse_buffer(char *line, t_stack **stack_a, t_stack **stack_b)
 		if (ft_strcmp(cmd_list[i], line) == 0)
 		{
 			func_list[i](stack_a, stack_b, 0);
+			visu(*stack_a, *stack_b);
 			return (1);
 		}
 		i++;
@@ -104,6 +145,7 @@ int	main(int argc, char **argv)
 	stack_a = sl_tab_to_stack(argv);
 	if (!sl_check_error_stack(stack_a) || !stack_a)
 		return (ps_error());
+	size = sl_get_size(stack_a);
 	input(&stack_a, &stack_b); 
 	sl_print_stack(stack_a);
 	return (0);
