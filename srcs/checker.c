@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/22 12:50:47 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 14:13:46 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 15:31:04 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,22 +41,21 @@ int	input(t_stack **stack_a, t_stack **stack_b)
 	char	*line;
 	int		size;
 
-	if (sl_check_sorted(*stack_a) && !(*stack_b))
-		return (ps_ok());
 	while (1)
 	{
 		size = get_next_line(0, &line);
 		if (size == 0)
 		{
 			free(line);
-			return (0);
+			if (sl_check_sorted(*stack_a) && !(*stack_b))
+				return (ps_ok());
+			return (ps_ko());
 		}
-		if (analyse_buffer(line, stack_a, stack_b) < 0)
-			ft_putstr_fd("Error\n", 2);
-		else if (sl_check_sorted(*stack_a) && !(*stack_b))
+		else if (analyse_buffer(line, stack_a, stack_b) < 0)
 		{
 			free(line);
-			return (ps_ok());
+			ft_putstr_fd("Error\n", 2);
+			return (0);
 		}
 		free(line);
 	}

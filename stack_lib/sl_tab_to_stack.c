@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/21 14:59:52 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 14:47:23 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 15:46:07 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int		push_tab(char **tab, t_stack **stack)
 {
-	int		j;
-	int		tmp;
-	t_stack *elem;
+	int			j;
+	long int	tmp;
+	t_stack		*elem;
 
 	j = 0;
 	while (tab[j])
