@@ -6,13 +6,13 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/02 12:11:50 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 14:38:35 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 16:53:15 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
-int		get_pivot(t_stack *stack)
+int	get_pivot(t_stack *stack)
 {
 	int		stack_size;
 	t_stack	*sorted;

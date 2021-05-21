@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/21 14:28:32 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 14:42:18 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 16:56:15 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@
 # include <stdlib.h>
 # include "../libsh/libsh.h"
 
-typedef struct	s_stack
+typedef struct s_stack
 {
 	struct s_stack	*next;
 	int				value;
 }				t_stack;
 
-typedef struct	s_var
+typedef struct s_var
 {
 	int	value_a;
 	int	value_b;

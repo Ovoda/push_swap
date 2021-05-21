@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/22 12:50:47 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 15:31:04 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 16:49:26 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int	input(t_stack **stack_a, t_stack **stack_b)
 int	main(int argc, char **argv)
 {
 	t_stack	*stack_a;
-	t_stack *stack_b;
+	t_stack	*stack_b;
 
 	stack_b = NULL;
 	if (pre_prog(argc, argv, &stack_a) != 1)

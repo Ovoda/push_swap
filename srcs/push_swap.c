@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/22 12:50:47 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 14:45:41 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 16:50:02 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	push_swap(t_stack **stack_a)
 		alg_pivot(stack_a);
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	t_stack	*stack_a;
 

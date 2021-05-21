@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/02 18:20:47 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 14:42:07 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 16:51:45 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	rotate_till_min(t_stack **a, t_stack **b, int limit)
 
 void	alg_five(t_stack **stack)
 {
-	t_stack *b;
+	t_stack	*b;
 
 	b = NULL;
 	rotate_till_min(stack, &b, 3);

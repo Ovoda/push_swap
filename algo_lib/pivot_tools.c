@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 13:49:15 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 13:52:58 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 16:52:40 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ t_var	count_rr_rrr(t_var var, int index_b)
 {
 	var = check_rr_or_r(var, index_b);
 	var.total_rr = 0;
-	if ((var.is_rra == 0 && var.is_rrb == 0) ||
-			(var.is_rra == 1 && var.is_rrb == 1))
+	if ((var.is_rra == 0 && var.is_rrb == 0)
+		|| (var.is_rra == 1 && var.is_rrb == 1))
 	{
 		if (var.total_a > var.total_b)
 			var.total_rr = var.total_b;

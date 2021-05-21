@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 21:20:18 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 14:41:07 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 16:52:58 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ void	alg_three(t_stack **stack)
 	a[2] = (*stack)->next->next->value;
 	if (a[0] == max && a[1] == min)
 		ra(stack, NULL, 1);
-	if ((a[1] == min && a[2] == max) || (a[0] == max && a[2] == min) ||
-		(a[0] == min && a[1] == max))
+	if ((a[1] == min && a[2] == max) || (a[0] == max && a[2] == min)
+		|| (a[0] == min && a[1] == max))
 		sa(stack, NULL, 1);
 	if (a[1] == max && a[2] == min)
 		rra(stack, NULL, 1);

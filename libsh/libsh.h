@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 13:11:51 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 12:50:08 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 16:56:56 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_itoa(int n);
 char			*ft_strnstr(const char *haystack,
-				const char *needle, size_t len);
+					const char *needle, size_t len);
 void			ft_putchar(char c);
 void			ft_putstr(char const *s);
 void			ft_putnbr(int n);

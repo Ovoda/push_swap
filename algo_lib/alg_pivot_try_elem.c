@@ -6,13 +6,13 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 12:00:18 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 14:20:58 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 16:55:52 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
-int		get_top_a(t_stack *a, int b, int pivot)
+int	get_top_a(t_stack *a, int b, int pivot)
 {
 	t_stack	*tmp_a;
 	int		last;
@@ -52,7 +52,7 @@ t_var	init_var(t_stack **a, t_stack **b, int index_b, int pivot)
 	return (var);
 }
 
-int		count_step_to_get_right_pos(t_stack **a, t_stack **b,
+int	count_step_to_get_right_pos(t_stack **a, t_stack **b,
 		int pivot_index[2], int print)
 {
 	t_var	var;
@@ -82,7 +82,7 @@ int		count_step_to_get_right_pos(t_stack **a, t_stack **b,
 	return (0);
 }
 
-int		count_steps(t_stack **stack, t_stack **b, int pivot_index[2])
+int	count_steps(t_stack **stack, t_stack **b, int pivot_index[2])
 {
 	t_stack	*tmp_b;
 	t_stack	*tmp_a;
@@ -96,7 +96,7 @@ int		count_steps(t_stack **stack, t_stack **b, int pivot_index[2])
 	return (ret);
 }
 
-int		try_all_elems(t_stack **stack, t_stack **b, int pivot)
+int	try_all_elems(t_stack **stack, t_stack **b, int pivot)
 {
 	int		size;
 	int		min[3];
@@ -114,8 +114,8 @@ int		try_all_elems(t_stack **stack, t_stack **b, int pivot)
 			min[0] = min[1];
 			min[2] = pivot_index[1];
 		}
-		if ((min[0] <= (sl_get_size(*stack) + size) / 60 &&
-			(sl_get_size(*stack) + size) > 400) || min[0] <= 1)
+		if ((min[0] <= (sl_get_size(*stack) + size) / 60
+				&& (sl_get_size(*stack) + size) > 400) || min[0] <= 1)
 			break ;
 		pivot_index[1]++;
 	}

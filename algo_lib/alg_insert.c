@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 20:25:10 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/21 11:56:10 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 16:55:00 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ void	insert_empty_b_min_max(t_stack **a, t_stack **b)
 	size = sl_get_size(*b);
 	index_max = sl_get_index(*b, sl_get_max(*b));
 	index_min = sl_get_index(*b, sl_get_min(*b));
-	if ((size - index_min < index_min && size - index_min < index_min) ||
-			(size - index_max < index_max && size - index_max < index_min))
+	if ((size - index_min < index_min && size - index_min < index_min)
+		|| (size - index_max < index_max && size - index_max < index_min))
 	{
 		index_max = size - index_max;
 		index_min = size - index_min;
