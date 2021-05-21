@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/22 20:57:26 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/04 18:48:48 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 12:48:12 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,3 @@ void	rb(t_stack **a, t_stack **b, int print)
 	if (print == 1)
 		ft_putstr("rb\n");
 }
-

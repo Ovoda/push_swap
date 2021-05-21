@@ -6,14 +6,14 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/02 10:50:04 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/02 10:53:34 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 11:59:11 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
-int	ps_error()
+int	ps_error(void)
 {
-	ft_putstr_fd("ERROR\n", 2);
+	ft_putstr_fd("Error\n", 2);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/21 17:13:33 by calide-n          #+#    #+#             */
-/*   Updated: 2021/04/22 12:16:09 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 14:36:17 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ void	sl_remove_first_elem(t_stack **stack)
 		*stack = NULL;
 		return ;
 	}
-	tmp_first = (*stack);
+	tmp_first = *stack;
 	(*stack) = (*stack)->next;
-	free(tmp_first);
+	if (tmp_first != NULL)
+		free(tmp_first);
 }

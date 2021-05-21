@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/21 17:13:33 by calide-n          #+#    #+#             */
-/*   Updated: 2021/04/24 16:03:53 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 11:40:57 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	sl_rotate_down(t_stack **stack)
 	while (tmp_stack)
 	{
 		if (!tmp_stack->next->next)
-			break;
+			break ;
 		tmp_stack = tmp_stack->next;
 	}
 	tmp_stack->next = NULL;

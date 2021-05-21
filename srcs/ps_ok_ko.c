@@ -6,19 +6,19 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/02 10:50:04 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/02 11:47:28 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 11:59:25 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
-int	ps_ok()
+int	ps_ok(void)
 {
 	ft_putstr_fd("OK\n", 1);
 	return (0);
 }
 
-int	ps_ko()
+int	ps_ko(void)
 {
 	ft_putstr_fd("KO\n", 1);
 	return (0);

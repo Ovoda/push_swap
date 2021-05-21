@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 19:43:26 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/20 15:49:41 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 11:40:26 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	sl_get_elem_at_index(t_stack *stack, int index)
 	t_stack	*tmp_stack;
 
 	tmp_stack = stack;
-//	printf("index->[%d]\n", index);
 	while (index--)
 	{
 		if (tmp_stack)

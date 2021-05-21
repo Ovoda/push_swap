@@ -1,34 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   solve_first_half.c                                 :+:      :+:    :+:   */
+/*   alg_five.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/19 02:33:37 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/19 02:54:13 by calide-n         ###   ########.fr       */
+/*   Created: 2021/05/02 18:20:47 by calide-n          #+#    #+#             */
+/*   Updated: 2021/05/21 14:42:07 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
-
-int		count_step_in_a(t_stack *elem, t_stack *b, t_stack *a)
+void	rotate_till_min(t_stack **a, t_stack **b, int limit)
 {
-	if (elem->value < a->value)
-	{
+	int	min;
+	int	index;
 
-	}
+	min = sl_get_min(*a);
+	index = sl_get_index(*a, min);
+	if (index > limit)
+		while ((*a)->value != min)
+			rra(a, NULL, 1);
 	else
-	{
-		while (elem->value > a->value)
-			ra(;w
-					);
-	}
+		while ((*a)->value != min)
+			ra(a, NULL, 1);
+	pb(a, b, 1);
 }
 
-void	count_steps_elem(t_stack *elem, t_stack *b, t_stack *a)
+void	alg_five(t_stack **stack)
 {
-	count_step_in_a();
-	count_step_in_b();
+	t_stack *b;
+
+	b = NULL;
+	rotate_till_min(stack, &b, 3);
+	rotate_till_min(stack, &b, 2);
+	alg_three(stack);
+	pa(stack, &b, 1);
+	pa(stack, &b, 1);
+	return ;
 }

@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/02 12:15:15 by calide-n          #+#    #+#             */
-/*   Updated: 2021/05/04 18:52:21 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/20 20:06:12 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ t_stack	*sort_ref_stack(t_stack *stack)
 	int		max;
 
 	res = NULL;
-	tmp = NULL;
 	tmp = sl_stackdup(stack);
 	while (tmp)
 	{

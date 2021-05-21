@@ -6,7 +6,7 @@
 /*   By: calide-n <calide-n@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/21 14:19:08 by calide-n          #+#    #+#             */
-/*   Updated: 2021/04/21 15:21:59 by calide-n         ###   ########.fr       */
+/*   Updated: 2021/05/21 11:40:37 by calide-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,3 @@ void	sl_push_back(t_stack **stack, t_stack *elem)
 		tmp_stack->next = elem;
 	}
 }
-
